@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Allgemeines}{2}{0}{1}
-\beamer@sectionintoc {2}{Aufgabenstellungen}{5}{0}{2}
-\beamer@sectionintoc {3}{Experiment}{9}{0}{3}
-\beamer@sectionintoc {4}{Theorie}{19}{0}{4}
+\beamer@sectionintoc {2}{Aufgabenstellungen}{9}{0}{2}
+\beamer@sectionintoc {3}{Experiment}{14}{0}{3}
+\beamer@sectionintoc {4}{Theorie}{24}{0}{4}

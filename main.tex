@@ -8,9 +8,9 @@
 \usetikzlibrary{calc}
 \graphicspath{ {./photos} }
 
+
 \author{Hakim Rachidi}
 \title{GYPT Basics}
-
 
 
 
@@ -255,10 +255,11 @@ Unter relevanten Parameter verstehen wir ...
 \vfill
 \begin{center}
 \begin{tikzpicture}
-  \draw[fill=brown!40!white] (0, -0.5) -- (0, -1.5) -- (8, -1.5) -- (8, -0.5) -- (0, -0.5);
+  \draw[fill=brown!40!white, thick, draw=brown!80!white] (0, -0.5) -- (0, -1.5) -- (8, -1.5) -- (8, -0.5) -- (0, -0.5);
   \node at (6, -1) {$m$};
   \draw[<->] (2.1, -2) -- (5.9, -2) node[pos=0.5, below=1pt] {$L$};
-
+  \draw[->] (-1, -1.5) -- (9, -1.5) node[pos=0.9, below=2pt] {$x$};
+  \draw[dashed] (4, -1.5) -- (4, 0.25) node[pos=1, above=1pt] {$x = 0$};
   \filldraw (4, -1) circle[radius=0.05];
   \draw (2, -2) circle [radius=0.5];
   \filldraw (2, -2) circle [radius=0.05];
@@ -337,13 +338,14 @@ Unter relevanten Parameter verstehen wir ...
 
 \begin{center}
 \begin{tikzpicture}
-  \draw[fill=brown!40!white] (0.5, -0.5) -- (0.5, -1.5) -- (8.5, -1.5) -- (8.5, -0.5) -- (0.5, -0.5);
+  \draw[fill=brown!40!white, thick, draw=brown!80!white] (0.5, -0.5) -- (0.5, -1.5) -- (8.5, -1.5) -- (8.5, -0.5) -- (0.5, -0.5);
   \filldraw (4.5, -1) circle [radius=0.05];
   \node at (7, -1.25) {$m$};
+  \draw[->] (-1, -1.5) -- (9, -1.5) node[pos=0.9, below=1pt] {$x$};
   \draw[<->] (2.1, -2) -- (5.9, -2) node[pos=0.8, below=1pt] {$L$};
-  \draw[green, ->] (2, -1.5) -- +(0, 1.2) node[pos=0.5, below=1pt, left] {$N_1$};
+  \draw[thick, green!80!black, ->] (2, -1.5) -- +(0, 1.2) node[pos=0.5, below=1pt, left] {$N_1$};
   \draw[thick, red, ->] (2, -1.5) -- +(0.6, 0) node[pos=0.5, above=1pt] {$F_1$};
-  \draw[green, ->] (6, -1.5) -- +(0, 2) node[pos=0.8, right=1pt] {$N_2$};
+  \draw[thick, green!80!black, ->] (6, -1.5) -- +(0, 2) node[pos=0.8, right=1pt] {$N_2$};
   \draw[thick, red, ->] (6, -1.5) -- +(-1, 0) node[pos=0.5, above=1pt] {$F_2$};
   \draw[dashed] (4, -3) -- (4, 1);
   \draw[thick, blue, ->] (4, -1) -- (4.4, -1) node [blue, pos=0.5, below=2pt] {$x$};
@@ -364,7 +366,7 @@ Unter relevanten Parameter verstehen wir ...
 \begin{itemize}
 \item Auslenkung fuehrt zu Kraefteungleichgewicht
 \item[$\rightarrow$] Ruecktreibende Kraft wirkt beschleunigend
-\item[$\rightarrow$] Traegheit des Objekts bewirkt erneute Auslenkung ueber Gleichgewichtslage
+\item[$\rightarrow$] Traegheit des Objekts bewirkt erneute Auslenkung ueber Gleichgewichtslage hinaus
 \end{itemize}
 \end{frame}
 
@@ -477,13 +479,92 @@ Passt die Theorie zum Experiment ?
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Anforderungen}
+\begin{frame}{Praesentation}
+\begin{center}
+\begin{tikzpicture}
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!20!white, text width=3cm] (1) at (0, 0) {Title} 
+    node[right, align=left] at +(0.5, 0) {\small Problem mit Nummer, Name, Teamname, Datum, ...};
+  \pause
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!20!white, text width=3cm] (2) at (0, -1.5) {Task}
+    node[right, align=left] at +(0.5, -1.5) {\small Aufgabe, Video des Phaenomens, ...};
+  \pause
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!30!white, text width=3cm]  at (-0.1, -3.1) {Solution};
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!20!white, text width=3cm] (3) at (0, -3) {Solution}
+    node[right, align=left] at +(0.5, -3) {\small Basic Explanation, Quantitative Theorie,\\Experimentaufbau, Ergebnisse, ...};
+  \pause
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!20!white, text width=3cm] (4) at (0, -4.5) {Summary}
+    node[right, align=left] at +(0.5, -4.5) {\small Fazit / Zusammenfassung der besten \\u. wichtigsten Ergebnisse, ...};
+  \pause
+  \node[align=center, left, inner sep=8pt, draw, fill=blue!20!white, text width=3cm] (5) at (0, -6) {Appendix}
+    node[right, align=left] at +(0.5, -6) {\small \textbf{Optional}:\\Ergebnisse, die nicht in die Praesentation passen};
+\end{tikzpicture} 
+\end{center}
+\pause
+\begin{itemize}
+\item Folien sind zu nummerieren!
+\end{itemize}
 \end{frame}
 
+\begin{frame}{Praesentieren (12 min.)}
+\begin{center}
+{\huge Inhalt } $>$ {\tiny Performanz }
+\end{center}
+\vfill
+\begin{itemize}
+  \item Inhalt (Theorie, Experiment) steht im Vordergrund
+  \item[$\rightarrow$]{\footnotesize jedoch vermitteln Rhetorik und Koerpersprache den ersten Eindruck}
+  \item \textbf{Time mangement}: 12 Minuten sollten genutzt und eingehalten werden
+  \item Zielgruppe: Lehrer u. Physiker, nicht Schueler
+  \item[$\rightarrow$] Physikvorwissen kann vorausgesetzt werden 
+\end{itemize}
+\end{frame}
 
-\section{Diskusion}
+\begin{frame}{Diskussion (12 min.)}
+Als Reporter ...
+\begin{itemize}
+\item meist passiv
+\item beantwortet die Fragen des Opponents
+\end{itemize}
+\pause
+\vfill
+Als Opponent ...
+\begin{itemize}
+\item fragt und versucht \textbf{Unklarheiten} zu klaeren 
+\item weist \textbf{Schwachstellen} der Praesentation im Rahmen der \underline{Aufgabe} auf
+\item zeigt deutlich die eigene Meinung (\emph{I agree/disagree with ...}) und begruendet diese physikalisch
+\item fuehrt die Diskussion auf Grundlage der Praesentation (keine eigenen Ergebnisse)
+\item priorisiert und strukturiert die Diskussion
+\item bleibt freundlich und laesst den Reporter aussprechen
+\end{itemize}
+\end{frame}
 
-\section{Juryfragen}
+\begin{frame}{Beispiel: \emph{Friction Oscillator}}
+  Fragen die ein Opponent jetzt stellen koennte ...
+  {\small
+  \begin{itemize}
+    \item \emph{Is static friction in the starting phase negligible ?}
+    \item \emph{Did you experimentally vary the initial displacement $x_0$ ?}
+    \item \emph{The Task states ..., did you consider the case when the cylinders spin in the opposite direction ?}
+    \item \emph{Is the radius of the cylinders negligible  ?}
+    \item \emph{The Task is concerned with objects. Do you believe the mass distribution is of any importance?}
+    \item \emph{Did you investigate in-plane motion of the object ?}
+    \item \emph{Is your pure slipping assumption justified ?}
+    \item \emph{Did you vary the friction coefficients experimentally ?}
+  \end{itemize}
+  }
+  \underline{mit eigener Meinung und Physik! }
+  \vfill
+
+  \pause 
+  \begin{itemize}
+    \item[$\rightarrow$] Versucht die gesamten 12 Minuten auszuschoepfen
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Jurygrading}
+\includegraphics[width=\textwidth]{photos/jury_sheet}
+\end{frame}
+
 
 \begin{frame}{Timeline}
 \begin{center}
@@ -494,9 +575,9 @@ Passt die Theorie zum Experiment ?
 \node[align=center, inner sep=10pt, fill=red!30!white, draw, text width=8cm] (4) at (0, -6) {Bundeswettbewerb, 03.03.2023};
 
 
-\draw[->, thick] (1.south) -- (2.north) node[pos=0.5, right=3pt] {x Wochen};
-\draw[->, thick] (2.south) -- (3.north) node[pos=0.5, right=3pt] {y Wochen};
-\draw[->, thick] (3.south) -- (4.north) node[pos=0.5, right=3pt] {z Wochen};
+\draw[->, thick] (1.south) -- (2.north) node[pos=0.5, right=3pt] {$\approx$ 11 Wochen};
+\draw[->, thick] (2.south) -- (3.north) node[pos=0.5, right=3pt] {$\approx$ 9 Wochen};
+\draw[->, thick] (3.south) -- (4.north) node[pos=0.5, right=3pt] {$\approx$ 4 Wochen};
 
 \end{tikzpicture}
 \end{center}

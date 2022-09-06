@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.26)  6 SEP 2022 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.26)  6 SEP 2022 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,63 +1215,63 @@ Package pdftex.def Info: photos/fft.png  used on input line 345.
 
 ] [31
 
+] [32
+
+] [33
+
 ]
-Overfull \hbox (1.23022pt too wide) in paragraph at lines 543--543
+Overfull \hbox (1.23022pt too wide) in paragraph at lines 544--544
  [][]\OT1/cmss/m/n/9 Experiment 
- []
-
-[32
-
-]
-<photos/plot.png, id=934, 722.7pt x 578.16pt>
-File: photos/plot.png Graphic file (type png)
-<use photos/plot.png>
-Package pdftex.def Info: photos/plot.png  used on input line 554.
-(pdftex.def)             Requested size: 245.83282pt x 196.66884pt.
-
-Overfull \vbox (3.95961pt too high) detected at line 554
- []
-
-[33
-
- <./photos/plot.png>]
-Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
- [] 
  []
 
 [34
 
 ]
-Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
- [] 
+<photos/plot.png, id=988, 722.7pt x 578.16pt>
+File: photos/plot.png Graphic file (type png)
+<use photos/plot.png>
+Package pdftex.def Info: photos/plot.png  used on input line 555.
+(pdftex.def)             Requested size: 245.83282pt x 196.66884pt.
+
+Overfull \vbox (3.95961pt too high) detected at line 555
  []
 
 [35
 
-]
-Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
+ <./photos/plot.png>]
+Overfull \hbox (7.13095pt too wide) in paragraph at lines 577--577
  [] 
  []
 
 [36
 
 ]
-Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
+Overfull \hbox (7.13095pt too wide) in paragraph at lines 577--577
  [] 
  []
 
 [37
 
 ]
-Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
+Overfull \hbox (7.13095pt too wide) in paragraph at lines 577--577
  [] 
  []
 
 [38
 
-] [39
+]
+Overfull \hbox (7.13095pt too wide) in paragraph at lines 577--577
+ [] 
+ []
 
-] [40
+[39
+
+]
+Overfull \hbox (7.13095pt too wide) in paragraph at lines 577--577
+ [] 
+ []
+
+[40
 
 ] [41
 
@@ -1279,43 +1279,43 @@ Overfull \hbox (7.13095pt too wide) in paragraph at lines 576--576
 
 ] [43
 
+] [44
+
+] [45
+
 ]
-<photos/jury_sheet.pdf, id=1228, 845.0471pt x 597.51233pt>
+<photos/jury_sheet.pdf, id=1280, 845.0471pt x 597.51233pt>
 File: photos/jury_sheet.pdf Graphic file (type pdf)
 <use photos/jury_sheet.pdf>
-Package pdftex.def Info: photos/jury_sheet.pdf  used on input line 636.
+Package pdftex.def Info: photos/jury_sheet.pdf  used on input line 637.
 (pdftex.def)             Requested size: 307.28987pt x 217.27419pt.
- [44
+ [46
 
- <./photos/jury_sheet.pdf>] [45
+ <./photos/jury_sheet.pdf>] [47
 
 ]
-Overfull \hbox (1.23022pt too wide) in paragraph at lines 701--701
+Overfull \hbox (1.23022pt too wide) in paragraph at lines 702--702
  [][]\OT1/cmss/m/n/9 Experiment 
  []
 
 
-Overfull \hbox (11.86394pt too wide) in paragraph at lines 701--701
+Overfull \hbox (11.86394pt too wide) in paragraph at lines 702--702
 []| [][]  
  []
 
-[46
+[48
 
 ]
-Overfull \hbox (1.23022pt too wide) in paragraph at lines 701--701
+Overfull \hbox (1.23022pt too wide) in paragraph at lines 702--702
  [][]\OT1/cmss/m/n/9 Experiment 
  []
 
 
-Overfull \hbox (11.86394pt too wide) in paragraph at lines 701--701
+Overfull \hbox (11.86394pt too wide) in paragraph at lines 702--702
 []| [][][]  
  []
 
-[47
-
-] [48
-
-] [49
+[49
 
 ] [50
 
@@ -1324,6 +1324,10 @@ Overfull \hbox (11.86394pt too wide) in paragraph at lines 701--701
 ] [52
 
 ] [53
+
+] [54
+
+] [55
 
 ]
 \tf@nav=\write6
@@ -1340,9 +1344,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B406126815F0966F5F11A3B7E6B87021;402.
  ) 
 Here is how much of TeX's memory you used:
- 27930 strings out of 480166
- 576812 string characters out of 5890479
- 823822 words of memory out of 5000000
+ 27934 strings out of 480166
+ 576850 string characters out of 5890479
+ 824389 words of memory out of 5000000
  45206 multiletter control sequences out of 15000+600000
  481081 words of font info for 71 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1361,10 +1365,10 @@ r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr
 local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/loc
 al/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on main.pdf (53 pages, 5368972 bytes).
+Output written on main.pdf (55 pages, 5377981 bytes).
 PDF statistics:
- 1625 PDF objects out of 1728 (max. 8388607)
- 1483 compressed objects within 15 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 1680 PDF objects out of 1728 (max. 8388607)
+ 1535 compressed objects within 16 object streams
+ 115 named destinations out of 1000 (max. 500000)
  188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

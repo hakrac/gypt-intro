@@ -461,6 +461,62 @@ F_2 = \mu_d N_2 = \mu_d \frac{\frac{L}{2} + x}{L} m g
 \footnotetext[1]{Henaff et al. (2018). \emph{A study of kinetic friction: The Timoshenko oscillator} in American Journal of Phyics}
 \end{frame}
 
+\begin{frame}{Beispiel: \emph{Friction Oscillator}}
+\textbf{Annahmen}:
+\begin{itemize}
+  \item kein Rollen $\rightarrow$ Gleitreibung ($\mu_d$)
+  \item $\mu_d = $ const.
+\end{itemize}
+\begin{columns}
+\column{0.6\textwidth}
+\resizebox{\columnwidth}{!}{ 
+\begin{tikzpicture}
+  \draw[fill=brown!40!white] (0.5, -0.5) -- (0.5, -1.5) -- (8.5, -1.5) -- (8.5, -0.5) -- (0.5, -0.5);
+  \filldraw (4.5, -1) circle [radius=0.05];
+  \node at (7, -1.25) {$m$};
+  \draw[<->] (2.1, -2) -- (5.9, -2) node[pos=0.8, below=1pt] {$L$};
+  \draw[green, ->] (2, -1.5) -- +(0, 1.2) node[pos=0.5, below=1pt, left] {$N_1$};
+  \draw[thick, red, ->] (2, -1.5) -- +(0.6, 0) node[pos=0.5, above=1pt] {$F_1$};
+  \draw[green, ->] (6, -1.5) -- +(0, 2) node[pos=0.8, right=1pt] {$N_2$};
+  \draw[thick, red, ->] (6, -1.5) -- +(-1, 0) node[pos=0.5, above=1pt] {$F_2$};
+  \draw[dashed] (4, -3) -- (4, 1);
+  \draw[thick, blue, ->] (4, -1) -- (4.4, -1) node [blue, pos=0.5, below=2pt] {$x$};
+
+  \draw (2, -2) circle [radius=0.5];
+  \filldraw (2, -2) circle [radius=0.05];
+  \draw (6, -2) circle [radius=0.5];
+  \filldraw (6, -2) circle [radius=0.05];
+  \draw[->, red] (6, -2)+(-90:0.6) arc [start angle=-90, end angle=0, radius=0.6] node[pos=0.5, right=1pt] {$\omega$};
+  \draw[->, red] (2, -2)+(-90:0.6) arc [start angle=-90, end angle=-180, radius=0.6] node[pos=0.5, left=1pt] {$\omega$};
+\end{tikzpicture}
+}
+\column{0.4\textwidth}
+\begin{equation*}
+\boxed{\ddot{x} = -\frac{2\mu_d g}{L} x} 
+\end{equation*}
+\vfill
+\textbf{Allgemeine Lösung}:
+\begin{equation*}
+x(t) = A sin(\omega_s t + \varphi)
+\end{equation*}
+\end{columns}
+\vfill
+\pause
+Wenn $x(0) = x_0$ und $\dot{x}(0) = \dot{x}_0$ dann gilt,
+\vfill
+\begin{columns}
+\column{0.5\textwidth}
+\begin{equation*}
+\varphi = arctan(-\frac{x_0 \omega_s}{\dot{x}_0})
+\end{equation*}
+
+\column{0.5\textwidth}
+\begin{equation*}
+A = \frac{x_0}{sin(\varphi)}
+\end{equation*}
+\end{columns}
+\end{frame}
+
 
 
 \begin{frame}{Theorie Experiment Vergleich}
@@ -706,7 +762,7 @@ Als Opponent ...
 \textbf{Phänomen} When placed on its side on a ramp and released, a screw \underline{may} experience growing oscillations as it travels down the ramp.
 \vfill
 \begin{center}
-\color{blue}\href{}{Video zum Problem}\color{black}
+\color{blue}\href{https://youtu.be/iwerWvbOyoE}{Video zum Problem}\color{black}
 \end{center}
 \vfill
 \textbf{Aufgabe} Investigate how the \color{blue}motion \color{black} of the screw, as well as the \color{blue}growth \color{black} of these oscillations depend on the \color{orange}relevant parameters\color{black}.
@@ -739,7 +795,7 @@ Als Opponent ...
 \textbf{Aufgabe} Explain and investigate this phenomenon.
 \end{frame}
 
-\begin{frame}{Thermoacoustic Engine}
+\begin{frame}{16 Thermoacoustic Engine}
 \textbf{Phaenomen} A piston placed in the open end of a horizontal test tube which has its other end partially filled with steel wool may oscillate when the closed end is heated up.
 \vfill
 \begin{center}

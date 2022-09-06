@@ -8,11 +8,19 @@
 \usetikzlibrary{calc}
 \graphicspath{ {./photos} }
 
-
+\usecolortheme{seahorse}
 \author{Hakim Rachidi}
 \title{GYPT Basics}
+\date{7. September, 2022}
+\titlegraphic{
+  \includegraphics[width=3cm]{photos/logos_rgb}
+}
 
-
+\setbeamertemplate{frametitle}{\nointerlineskip  
+    \begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=1.375ex]{frametitle}
+        \hspace*{2ex}\insertframetitle \hfill {\small\insertframenumber} \hspace*{1ex}%
+    \end{beamercolorbox}
+}
 
 \begin{document}
 \begin{frame}
@@ -36,7 +44,7 @@ Ihr werdet ...
 \item eines der 17 Probleme aussuchen
 \item Experimente planen und durchführen
 \item Literatur (oder eigene Theorie) mit Experimenten vergleichen
-\item Experiment und Theorie in Form einer 12-minutigen Präsentation als \emph{Reporter} präsentieren
+\item Experiment und Theorie in Form einer 12-minutigen Präsentation als \emph{Reporter} in Englisch präsentieren
 \item mit dem \emph{Opponent} über die Ergebnisse diskutieren
 \item als \emph{Opponent} die Ergebnisse eines gegnerischen Teams diskutieren
 \end{itemize}
@@ -46,10 +54,10 @@ Ihr werdet ...
 \begin{frame}{Ziel dieser Präsentation}
 \hspace*{-0.5cm}\begin{tikzpicture}
 
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (2) at (-4, -2) {Aufgabe};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (3) at (-1, -2) {Experiment};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (4) at (2, -2) {Theorie};
-\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=blue!20!white] (5) at (5, -2) {Prasentation};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (2) at (-4, -2) {Aufgabe};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (3) at (-1, -2) {Experiment};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (4) at (2, -2) {Theorie};
+\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (5) at (5, -2) {Prasentation};
 
 \draw[->] (2.east) -- (3.west);
 \draw[->] (4.east) -- (5.west);
@@ -91,10 +99,10 @@ Ihr werdet ...
 
 \hspace*{-0.5cm}\begin{tikzpicture}
 
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (2) at (-4, -2) {Aufgabe};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=white] (3) at (-1, -2) {Experiment};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=white] (4) at (2, -2) {Theorie};
-\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=white] (5) at (5, -2) {Prasentation};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (2) at (-4, -2) {Aufgabe};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=white, minimum height=1.3cm] (3) at (-1, -2) {Experiment};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=white, minimum height=1.3cm] (4) at (2, -2) {Theorie};
+\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=white, minimum height=1.3cm] (5) at (5, -2) {Prasentation};
 
 \draw[->] (2.east) -- (3.west);
 \draw[->] (4.east) -- (5.west);
@@ -188,8 +196,8 @@ Experimenteller Aufbau sollte ...
 \begin{center}
 \hspace*{-0.5cm}\begin{tikzpicture}
 
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (3) at (-1, -2) {Experiment};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white] (4) at (2, -2) {Theorie};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (3) at (-1, -2) {Experiment};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=blue!20!white, minimum height=1.3cm] (4) at (2, -2) {Theorie};
 
 \draw (4.north) -- +(0, 0.5) coordinate (a);
 \draw[<-] (3.north) -- +(0, 0.5) coordinate (b);
@@ -587,10 +595,10 @@ Als Opponent ...
 \begin{frame}{Zusammenfassung}
 \hspace*{-0.5cm}\begin{tikzpicture}
 
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white] (2) at (-4, -2) {Aufgabe};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white] (3) at (-1, -2) {Experiment};
-\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white] (4) at (2, -2) {Theorie};
-\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=green!20!white] (5) at (5, -2) {Prasentation};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white, minimum height=1.3cm] (2) at (-4, -2) {Aufgabe};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white, minimum height=1.3cm] (3) at (-1, -2) {Experiment};
+\node[draw, inner sep=10pt, text width=1.5cm, align=center, right, fill=green!20!white, minimum height=1.3cm] (4) at (2, -2) {Theorie};
+\node[draw, inner sep=10pt, text width=2cm, align=center, right, fill=green!20!white, minimum height=1.3cm] (5) at (5, -2) {Prasentation};
 
 \draw[->] (2.east) -- (3.west);
 \draw[->] (4.east) -- (5.west);

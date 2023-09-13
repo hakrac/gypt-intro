@@ -15,7 +15,7 @@
 \usecolortheme{seahorse}
 \author{Hakim Rachidi}
 \title{GYPT Basics}
-\date{7. September, 2022}
+\date{\today}
 \titlegraphic{
   \includegraphics[width=3cm]{photos/logos_rgb}
 }
@@ -132,7 +132,7 @@ Problemstellungen sind offen formuliert
 Problem aussuchen ...
 \begin{itemize}
 \item abhängig von Erfahrung und Präferenz
-\item ...zu empfehlen sind jedoch Mechanikprobleme (meine Meinung)
+\item {\footnotesize ...am Anfang sind jedoch Mechanikprobleme zu empfehlen (meine Meinung)}
 \end{itemize}
 \end{frame}
 
@@ -173,7 +173,7 @@ Problem aussuchen ...
   addresource=videos/exp.mp4,
   flashvars={
    source=videos/exp.mp4
-   &autoPlay=trü
+   &autoPlay=true
   }
 ]{}{VPlayer.swf}
 \end{frame}
@@ -307,22 +307,18 @@ Unter relevanten Parametern verstehen wir ...
 
 
 \begin{frame}{Datenaufnahme und -auswertung}
-  Zur Datenerhebung steht im Schülerlabor ...
+  Datenerhebung hängt erheblich vom Problem ab. Zur Verfügung stehen jedoch ...
   \begin{itemize}
-    \item Digitalkamera, Handy zur Video- und Audioaufnahme
-    \item Wärmebildkamera FLIR
     \item Kraftsensor, Multimeter, Thermometer, Hallsonde, ...
-    \item Vernier LabQuest, GTR, ...
-    \item und weiteres
+    \item die im Schulunterricht verwendeten Materialien
+    \item und weiteres ...
   \end{itemize}
   zur Verfügung.
   \vfill
   \pause
-  Datenanalyse hängt von Präferenz, Erfahrung und Daten ab:
+  Datenanalyse abhängig von Präferenz, Erfahrung und Daten:
   \begin{itemize}
     \item Tracker, OpenCV (Python, C++) für Videodaten
-    \item FLIR Research IR
-    \item Vernier DataLogger
     \item Audacity für Audiodaten
     \item Python Jupyter Lab, Excel, Mathematica zur Auswertung, etc.
   \end{itemize}
@@ -508,7 +504,7 @@ Wenn $x(0) = x_0$ und $\dot{x}(0) = \dot{x}_0$ dann gilt,
 \begin{columns}
 \column{0.5\textwidth}
 \begin{equation*}
-\varphi = arctan(\frac{x_0 \omega_s}{\dot{x}_0})
+\varphi = arctan\left(\frac{x_0 \omega_s}{\dot{x}_0}\right)
 \end{equation*}
 
 \column{0.5\textwidth}
@@ -586,11 +582,11 @@ Passt die Theorie zum Experiment ?
   \item[$\rightarrow$]{\footnotesize jedoch vermitteln Rhetorik und Körpersprache den ersten Eindruck}
   \item \textbf{Time mangement}: 12 Minuten sollten genutzt und eingehalten werden
   \item Zielgruppe: Lehrer u. Physiker, nicht Schüler
-  \item[$\rightarrow$] Physikvorwissen kann vorausgesetzt werden 
+  \item[$\rightarrow$] Physikvorwissen aus dem Physikgrundstudium kann vorausgesetzt werden 
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Diskussion (12 min.)}
+\begin{frame}{Diskussion (10 min.)}
 Als Reporter ...
 \begin{itemize}
 \item meist passiv
@@ -628,7 +624,7 @@ Als Opponent ...
 
   \pause 
   \begin{itemize}
-    \item[$\rightarrow$] Versucht die gesamten 12 Minuten auszuschöpfen
+    \item[$\rightarrow$] Versucht die gesamten 10 Minuten auszuschöpfen
   \end{itemize}
 \end{frame}
 
@@ -640,15 +636,15 @@ Als Opponent ...
 \begin{frame}{Timeline}
 \begin{center}
 \begin{tikzpicture}
-\node[align=center, inner sep=10pt, fill=green!30!white, draw, text width=8cm] (1) at (0, 0) {Heute, 07.09.2022};
+\node[align=center, inner sep=10pt, fill=green!30!white, draw, text width=8cm] (1) at (0, 0) {Heute, 13.09.2022};
 \node[align=center, inner sep=10pt, fill=green!30!white, draw, text width=8cm] (2) at (0, -2) {Anmeldung der Teams, 01.12.2022};
-\node[align=center, inner sep=10pt, fill=blue!30!white, draw, text width=8cm] (3) at (0, -4) {Regionalwettbewerb, 31.01.2023};
+\node[align=center, inner sep=10pt, fill=blue!30!white, draw, text width=8cm] (3) at (0, -4) {Regionalwettbewerb, ???};
 \node[align=center, inner sep=10pt, fill=red!30!white, draw, text width=8cm] (4) at (0, -6) {Bundeswettbewerb, 03.03.2023};
 
 
-\draw[->, thick] (1.south) -- (2.north) node[pos=0.5, right=3pt] {$\approx$ 11 Wochen};
-\draw[->, thick] (2.south) -- (3.north) node[pos=0.5, right=3pt] {$\approx$ 9 Wochen};
-\draw[->, thick] (3.south) -- (4.north) node[pos=0.5, right=3pt] {$\approx$ 4 Wochen};
+\draw[->, thick] (1.south) -- (2.north) node[pos=0.5, right=3pt] {$\approx$ 10 Wochen};
+\draw[->, thick] (2.south) -- (3.north) node[pos=0.5, right=3pt] {$\approx$ ? Wochen};
+\draw[->, thick] (3.south) -- (4.north) node[pos=0.5, right=3pt] {$\approx$ ? Wochen};
 
 \end{tikzpicture}
 \end{center}
@@ -701,110 +697,6 @@ Als Opponent ...
 \end{center}
 \end{frame}
 
-
-\begin{frame}{03 Siren}
-\textbf{Phänomen} If you direct an air flow onto a rotating disk with holes, a sound may be heard.
-\vfill
-\begin{center}
-\begin{tikzpicture}
-\draw[fill=blue!20!white] (0, 0) circle[radius=2];
-\foreach \p in {0, 1, ..., 12}
-  \draw[fill=white] ({\p * 30}:1.6) circle[radius=0.2];
-
-\filldraw[black] (0, 0) circle[radius=0.1];
-
-\draw[thick, red, ->] (0, 0)+(2.3, 0) arc (0:45:2.3);
-\draw[->, green!50!black, very thick] (0, 0.5) -- (30:1.6);
-\end{tikzpicture}
-\end{center}
-\par
-\vfill
-
-
-\textbf{Aufgabe} Explain this phenomenon and investigate how the \color{blue}sound characteristics \color{black} depend on the \color{orange}relevant parameters\color{black}.
-\end{frame}
-
-\begin{frame}{06 Magnetic-Mechanical Oscillator}
-\textbf{Phänomen} Secure the lower ends of two identical leaf springs to a non-magnetic base and attach magnets to the upper ends such that they repel and are free to move.
-\vfill
-\begin{center}
-\begin{tikzpicture}
-\draw[fill=black] (0, 0) -- (0, -4) -- (0.1, -4) -- (0.1, 0) -- (0, 0);
-\draw[fill=red!20!white] (0.1, 0) -- (0.1, -1) -- (0.2, -1) -- (0.2, 0) -- (0.1, 0);
-\draw[fill=green!20!white] (0.2, 0) -- (0.2, -1) -- (0.3, -1) -- (0.3, 0) -- (0.2, 0);
-\draw[fill=red!20!white] (4, 0) -- (4, -1) -- (3.9, -1) -- (3.9, 0) -- (4, 0);
-\draw[fill=green!20!white] (3.9, 0) -- (3.9, -1) -- (3.8, -1) -- (3.8, 0) -- (3.9, 0);
-\draw[fill=black] (4, 0) -- (4, -4) -- (4.1, -4) -- (4.1, 0) -- (4, 0);
-\draw[fill=brown!50!black] (-0.5, -4) -- (4.5, -4) -- (4.5, -4.2) -- (-0.5, -4.2) -- cycle;
-
-\draw[red, <->] (0, 0.1)+(45:0.3) arc (45:135:0.3);
-\draw[red, <->] (4, 0.1)+(45:0.3) arc (45:135:0.3);
-
-\end{tikzpicture}
-\end{center}
-\par
-\vfill
-
-\textbf{Aufgabe} Investigate how the \color{blue}movement \color{black} of the springs depends on \color{orange}relevant parameters\color{black}.
-\end{frame}
-
-\begin{frame}{08 Euler's Pendulum}
-\textbf{Phänomen} Take a thick plate of non-magnetic material and fix a neodymium magnet on top of it. Suspend a magnetic rod (which can be assembled from cylindrical neodymium magnets) underneath it. Deflect the rod so that it touches the plate only with highest edge and release it.
-
-\vfill
-\begin{center}
-\color{blue}\href{https://www.youtube.com/watch?v=opWY6s0e9Yo}{Video zum Problem}\color{black}
-\end{center}
-\vfill
-\textbf{Aufgabe} Study the \color{blue}motion \color{black} of such a pendulum under various \color{orange}conditions\color{black}.
-\end{frame}
-
-\begin{frame}{09 Oscillating Screw}
-\textbf{Phänomen} When placed on its side on a ramp and released, a screw \underline{may} experience growing oscillations as it travels down the ramp.
-\vfill
-\begin{center}
-\color{blue}\href{https://youtu.be/iwerWvbOyoE}{Video zum Problem}\color{black}
-\end{center}
-\vfill
-\textbf{Aufgabe} Investigate how the \color{blue}motion \color{black} of the screw, as well as the \color{blue}growth \color{black} of these oscillations depend on the \color{orange}relevant parameters\color{black}.
-\end{frame}
-
-\begin{frame}{11 Ball on Ferrite Rod}
-\textbf{Phänomen} A ferrite rod is placed at the bottom end of a vertical tube. Apply an ac voltage, of a frequency of the same order as the natural frequency of the rod, to a fine wire coil wrapped around its lower end. When a ball is placed on top of the rod, it will start to bounce. 
-
-\vfill
-\begin{center}
-\begin{tikzpicture}
-
-
-\draw[blue, thick] (0.25, -3.5) -- ++(-1.5, 0) -- ++(0, 1.25);
-\draw[fill=red!30!white] (0.25, 0.25) circle[radius=0.25];
-\draw[decorate, decoration={coildown,   aspect=0.1, amplitude=4 mm,  segment length=2mm}, blue, thick] (0.25,-0.75) -- (0.25, -3.5);
-\draw[fill=gray!60!white] (0, 0) -- (0.5, 0) -- (0.5, -4) -- (0, -4) -- cycle;
-\draw [decorate, decoration={coilup,   aspect=0.1, amplitude=4 mm,  segment length=2mm}, blue, thick] (0.25, -0.75) -- (0.25, -3.5);
-\draw[red, <->] (0.75, -0.25) -- (0.75, 0.75);
-\draw[blue, thick] (0.25, -0.75) -- ++(-1.5, 0) -- ++(0, -1.25);
-\draw[blue, fill=white] (0.25, -0.75)+(-1.5, -1.25) circle[radius=0.05];
-\draw[blue, fill=white] (0.25, -3.5)+(-1.5, 1.25) circle[radius=0.05];
-
-\node at (-1.6, -2.1) {\large $\sim$};
-\end{tikzpicture}
-\end{center}
-\par
-\vfill
-
-\textbf{Aufgabe} Explain and investigate this phenomenon.
-\end{frame}
-
-\begin{frame}{16 Thermoacoustic Engine}
-\textbf{Phaenomen} A piston placed in the open end of a horizontal test tube which has its other end partially filled with steel wool may oscillate when the closed end is heated up.
-\vfill
-\begin{center}
-\color{blue}\href{https://www.youtube.com/watch?v=ErlvMZI0tlA}{Video zum Problem}\color{black}
-\end{center}
-\vfill
-\textbf{Aufgabe} Investigate the phenomenon and determine the \underline{efficiency} of this engine.
-\end{frame}
 
 
 \end{document}
